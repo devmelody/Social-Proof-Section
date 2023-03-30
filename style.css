@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            font-family: "League Spartan";
+            background-color: hsl(0, 0%, 100%);
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTg0IiBoZWlnaHQ9IjM2MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgeDE9IjEwMCUiIHkxPSI2OS4yMTIlIiB4Mj0iOS4zOTklIiB5Mj0iMzIuMTgzJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiM4QTQzODkiIHN0b3Atb3BhY2l0eT0iMCIgb2Zmc2V0PSIwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiM1MTIwNTEiIG9mZnNldD0iMTAwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiM1MTIwNTEiIG9mZnNldD0iMTAwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiM1MTIwNTEiIG9mZnNldD0iMTAwJSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGQ9Ik0wIDM2MmM0MC4wMjItODIuOCAxMTUuNzM2LTEzNS4xNTQgMjI3LjE0MS0xNTcuMDY0IDE2Ny4xMDgtMzIuODY0IDEwMy44NS02Ni4wMTIgMTg1Ljk0OS0xMzEuNzk2QzQ2Ny44MjMgMjkuMjg0IDUyNC43OTMgNC45MDQgNTg0IDB2MzYySDB6IiB0cmFuc2Zvcm09InJvdGF0ZSgxODAgMjkyIDE4MSkiIGZpbGw9InVybCgjYSkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iLjA1Ii8+PC9zdmc+");
+            background-repeat: no-repeat;
+        }
+
+        main {
+            width: 100%;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .container {
+            padding: 6em;
+            display: grid;
+            grid-template-areas: "a . b"
+                "c d e"
+            ;
+            grid-template-columns: 390px 390px 390px;
+            grid-template-rows: 300px 1fr;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .header {
+            grid-area: a;
+            margin-left: 10px;
+        }
+
+        .header>p {
+            color: hsl(303, 10%, 53%);
+        }
+
+        h1 {
+            letter-spacing: -2px;
+            font-size: 50px;
+            color: hsl(300, 43%, 22%);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .review {
+            color: hsl(300, 43%, 22%);
+            grid-area: b;
+            font-weight: 700;
+
+        }
+
+        .review>div {
+            background-color: hsl(300, 24%, 96%);
+            margin: 1rem;
+            padding: 12px 25px;
+        }
+
+        span {
+            margin-left: 50px;
+        }
+
+        .review>.review1 {
+            margin-left: -160px;
+            margin-right: 100px;
+        }
+
+        .review>.review2 {
+            margin-left: -120px;
+            margin-right: 60px;
+        }
+
+        .review>.review3 {
+            margin-left: -70px;
+        }
+
+        .rating {
+            display: inline;
+            margin-left: 50px;
+        }
+
+        .colton,
+        .irene,
+        .anne {
+            background-color: hsl(300, 43%, 22%);
+            color: hsl(300, 24%, 96%);
+            margin: 10px;
+            padding: 3rem;
+            border-radius: 10px;
+        }
+
+        .colton {
+            grid-area: c;
+        }
+
+        .irene {
+            grid-area: d;
+            margin-top: 20px;
+            margin-bottom: -10px;
+        }
+
+        .anne {
+            grid-area: e;
+            margin-top: 40px;
+            margin-bottom: -20px;
+        }
+
+        .profile {
+            display: flex;
+            margin-bottom: 10%;
+        }
+
+        img {
+            width: 35px;
+            border-radius: 50%;
+
+        }
+
+        .profile>.text {
+            margin-left: 20px;
+            margin-top: 2%;
+        }
+
+        .text>p {
+            color: hsl(333, 80%, 67%);
+        }
+
+        a:hover {
+            color: purple;
+        }
+
+        footer {
+            text-align: center;
+            padding-bottom: 8px;
+        }
+
+        @media screen and (max-width: 780px) {
+            .container {
+                width: 100%;
+                min-height: 100vh;
+                display: grid;
+                grid-template-areas: "a"
+                    "b"
+                    "c"
+                    "d"
+                    "e";
+                grid-template-columns: 370px;
+                grid-template-rows: 300px;
+                justify-content: center;
+                align-items: center;
+                padding: 5rem;
+            }
+
+            h1 {
+                font-size: 45px;
+                padding: 2rem;
+            }
+
+            .header>p {
+                font-size: 20px;
+                margin-top: -35px;
+            }
+
+            .header {
+                text-align: center;
+                margin-left: 0px;
+                margin-bottom: 0;
+            }
+
+            .review {
+                text-align: center;
+            }
+
+            .rating {
+                margin-left: 0;
+                margin-top: 10px;
+                display: block;
+            }
+
+            .review>.review1 {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .review>.review2 {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .review>.review3 {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
