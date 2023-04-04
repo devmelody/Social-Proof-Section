@@ -14,10 +14,8 @@
         }
 
         main {
-            width: 100%;
-            min-height: 100vh;
-            align-items: center;
-            justify-content: center;
+            min-width: 100%;
+            place-items: center;
 
         }
 
@@ -27,8 +25,8 @@
             grid-template-areas: "a . b"
                 "c d e"
             ;
-            grid-template-columns: 390px 390px 390px;
-            grid-template-rows: 300px 1fr;
+            grid-template-columns: 350px 350px 350px;
+            grid-template-rows: 300px 300px;
             justify-content: center;
             align-items: center;
 
@@ -93,7 +91,7 @@
             background-color: hsl(300, 43%, 22%);
             color: hsl(300, 24%, 96%);
             margin: 10px;
-            padding: 3rem;
+            padding: 2em;
             border-radius: 10px;
         }
 
@@ -152,11 +150,11 @@
                     "c"
                     "d"
                     "e";
-                grid-template-columns: 370px;
-                grid-template-rows: 300px;
-                justify-content: center;
-                align-items: center;
+                grid-template-columns: 280px;
+                grid-template-rows: 200px;
+                place-items: center;
                 padding: 5rem;
+                margin: auto;
             }
 
             h1 {
@@ -165,7 +163,7 @@
             }
 
             .header>p {
-                font-size: 20px;
+                font-size: 18px;
                 margin-top: -35px;
             }
 
@@ -173,10 +171,13 @@
                 text-align: center;
                 margin-left: 0px;
                 margin-bottom: 0;
+                padding-top: 70px;
             }
 
             .review {
                 text-align: center;
+                padding-top: 130px;
+                padding-bottom: 10px;
             }
 
             .rating {
